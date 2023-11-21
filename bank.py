@@ -1,4 +1,5 @@
 import json
+import csv
 from datetime import datetime
 
 CURRENCT_RATES = {}
@@ -79,6 +80,7 @@ class BankAccount:
 
 class BankInterface:
     global CURRENCT_RATES
+
     def __init__(self):
         self.accounts = {}
         self.load_from_file("bank_data.json")
