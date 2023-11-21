@@ -137,11 +137,9 @@ class BankInterface:
             with open(file_name, 'r') as file:
                 # Example CSV
                 # Date, Description, Amount, Currency
-                # 2023 - 11 - 21, Shopping, -50.00, USD
-                # 2023 - 11 - 20, Dinner
-                # Expense, -30.50, EUR
-                # 2023 - 11 - 19, Gas
-                # Station, 25.00, GBP
+                # 2023 - 11 - 21, Shopping, 50.00, USD
+                # 2023 - 11 - 20, Dinner Expense, 30.50, EUR
+                # 2023 - 11 - 19, Gas Station, 25.00, GBP
                 csv_reader = csv.DictReader(file)
                 transactions = [
                     Transaction(
